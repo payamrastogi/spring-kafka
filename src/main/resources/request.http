@@ -1,0 +1,15 @@
+POST http://localhost:8080/kafka/publish/greeting HTTP/1.1
+content-type: application/json
+
+{
+    "name": "payam",
+    "message": "hello"
+}
+
+###
+POST http://localhost:8080/kafka/publish/partition/0 HTTP/1.1
+content-type: application/json
+
+{
+    "message": "hello"
+}
